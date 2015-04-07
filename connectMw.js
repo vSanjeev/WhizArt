@@ -11,7 +11,6 @@ var client = net.connect({port: 13854},
   }));
 
 client.on('data', function(data) {
-
   try {
     var d = data.toString();
     // tokenize the received stream
